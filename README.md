@@ -318,7 +318,7 @@ See ![binary tree diagram](./binary-tree.png)
 
 # Exercise
 
-In this exercise we will challenge you to solve three problems using recursion.
+In this exercise we will challenge you to solve four problems using recursion.
 
 ## [pracitce1.js](./practice1.js)
 
