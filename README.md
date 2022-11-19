@@ -358,6 +358,21 @@ racecar
 kayak
 rotor
 
+## [pracitce4.js](./practice4.js)
+
+Using recursion, write a function that will determine all possible ways to make a target value with the integers, 0-9, passed to it as a string. 
+
+EX: 
+
+if you were provided the int string '123' and you were to find the expressions that equal a target value of 7 using those integers, you'd expect your results to look like so.
+
+allPossibleExpressions('123', 7) => [“1+2+3”, “1*2*3”]
+
+# Extra practice resources
+
+1. [Geeksforgeeks recursion practice with solutions](https://www.geeksforgeeks.org/recursion-practice-problems-solutions/)
+2. [w3resource recursion practice](https://www.w3resource.com/javascript-exercises/javascript-recursion-functions-exercises.php)
+
 
 
 
