@@ -130,8 +130,12 @@ console.log(output);
 
 Our inefficient fibonacci solution using recursion is going to run with a Big O of O(n^2), which is quadratic, and greatly less efficient than solving this problem with a basic looping solution. The reason our recursive solution for fibonacci O(n^2) is because for each invocation of our recursive function, it will call itself two times, and each of those invocations will then call itself sub n times as it reaches a total for each fibonacci term in the sequence, so to break this down for n=9, just the first step in our sequence we'd need to calculate, we can expect the following function tree.
 
-```
-n = 8:
+<details>
+  <summary>Step by Step breakdown of function calls for inefficient fibonacci</summary>
+
+  ### Tree of function calls for calculating fibonacci value at n=8
+  ```
+    n = 8:
                 f(3)[
                     f(2) + f(1)
                     ]
@@ -296,6 +300,7 @@ f(8)[
         ]
     ]
 ```
+</details>
 
 you can see how complexity can get wildly out of hand when using recursive functions with suboptimal solutions for problems that do not fit the approach of recursive solutions.
 
