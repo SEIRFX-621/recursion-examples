@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                counter-reset: recursive-css;
+            }
+            .staircase h3 {
+                position: relative;
+                top: 5em;
+                left: 5em;
+                border-width: 1px;
+                border-style: solid;
+                border-color: #000000;
+                width: 5em;
+                height: 5em;	
+            }
+            .staircase h3::before {
+                counter-increment: recursive-css;
+                content: "depth: " counter(recursive-css);
+                border-color: #ff0000;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="staircase test">
+            <!-- {{{ children with recursion depth of 6 -->
+            <h3>
+                <h3>
+                    <h3>
+                        <h3>
+                            <h3>
+                                <h3>
+                                </h3>
+                            </h3>
+                        </h3>
+                    </h3>
+                </h3>
+            </h3>
+            <!-- }}} -->
+        </div>
+    </body>
+</html>
