@@ -324,7 +324,7 @@ In this exercise we will challenge you to solve four problems using recursion.
 
 Using recursion, write a function that will simply calculate the factorial value of a number provided to it as it's initial parameter. This function should only accept non-negative integers and it should output the factorial value of the initial value.
 
-In maths, the factorial of a number is the product of all smaller integers to that number. In mathimatical notation, a factorial is denoted with an '!' so the factorial of 7 would be written as such, '!7'.
+In maths, the factorial of a number is the product of all smaller integers to that number. In mathematical notation, a factorial is denoted with an '!' so the factorial of 7 would be written as such, '!7'.
 
 ex: 
 !7 = 7 * 6 * 5 * 4 * 3 * 2 * 1 = 5040
