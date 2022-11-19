@@ -8,7 +8,7 @@ Simple definition: When a function calls itself.
 
 Recursion is a valuable tool in that it provides a powerful method for finding simple, efficient and clean solutions to dynamic and self referencing problems. There are some problems in computer science that are best solved by recursive algorithms however, it is notable that most problems can be solved with recursion, however very few problems should be solved using recursion. We'll talk about ways to identify if your problem could be a candidate for a recursive solution. 
 
-Recursion can be accomplished in any turing complete programming language, [Turing Completeness](https://en.wikipedia.org/wiki/Turing_completeness). Javascript, python and every other programming language you'll encounter in your career will be a turning complete language, even CSS is turing complete, and you can accomplish recursive behavior even in CSS.(See ![recursive-css-fun.html](./recursive-css-fun.html), keep in mind, this is a trivial example just to illustrate that you can use recursion in even surprising places, even if it's not an ideal approach).
+Recursion can be accomplished in any turing complete programming language, [Turing Completeness](https://en.wikipedia.org/wiki/Turing_completeness). Javascript, python and every other programming language you'll encounter in your career will be a turning complete language, even CSS is turing complete, and you can accomplish recursive behavior even in CSS.(See [recursive-css-fun.html](./recursive-css-fun.html), keep in mind, this is a trivial example just to illustrate that you can use recursion in even surprising places, even if it's not an ideal approach).
 
 Warning: Recursion is a powerful tool to have in your developer toolbox, however, under most circumstances it is advised to avoid recursive solutions in your everyday work, as they can obfuscate your code base, making it more difficult for your team members and yourself to easily read your code. As a general rule of thumb, if you find yourself solving a problem using recursion, take a step back and consider if recursion is in fact the most optimal and reasonable solution for your problem.  
 
@@ -41,7 +41,7 @@ Most useful applications of recursive functions will require more than 1 paramet
 
 Some brief descriptions of each example in this recursion guide
 
-## ![simpleLoop.js](./simpleLoop.js)
+## [simpleLoop.js](./simpleLoop.js)
 
 This code example is the simplest form of recursion. This application of recursion is so simple that it is not advisable that you replicate this in any of your code, as you are simply achieving a basic while loop expression but consuming much more memory than necessary and making your code hard to achieve. Viable examples of using recursion are primarily used when traversing binary trees and graph structures that cannot be easily traversed by classical loops. 
 
@@ -56,7 +56,7 @@ while (x <= 10) {
 }
 ```
 
-## ![fibonacci.js](./fibonacci.js)
+## [fibonacci.js](./fibonacci.js)
 
 In this example we will use a recursive solution to find the first nth values of a fibonacci sequence. 
 
@@ -301,7 +301,7 @@ you can see how complexity can get wildly out of hand when using recursive funct
 
 This is a great example of how recursion can make your code look cleaner and requiring you to write less lines of code, however you are actually introducing a significantly less optimal solution.
 
-## ![binaryTreeOrdered.js](./binaryTreeOrdered.js)
+## [binaryTreeOrdered.js](./binaryTreeOrdered.js)
 
 our third example is an example that shows a situation where recursion is by far the most optimal solution. This example shows the importance of recursion when working with binary trees(a data structure we will cover shortly). When working with any graph structure(binary trees are a typical version of a graph data structure) it is often most ideal to use recursion when manipulating these types of data structures, as they are dynamic and their depth is unknown, as well, we have to know what the previous step in the tree was in order to work properly inside of that tree. 
 
