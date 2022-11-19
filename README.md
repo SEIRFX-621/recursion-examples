@@ -360,13 +360,73 @@ rotor
 
 ## [pracitce4.js](./practice4.js)
 
-Using recursion, write a function that will determine all possible ways to make a target value with the integers, 0-9, passed to it as a string. 
+Using recursion, write a function that will travel a complex javascript object and print the name value in each node. You'll be provided with a test object like so
 
-EX: 
+```javascript
+const bigObject = {
+    name: 'top',
+    a1: {
+        name: 'a1',
+        b1: {
+            name: 'b1'
+        },
+        b2: {
+            name: 'b2',
+            c1: {
+                name: 'c1'
+            }
+        }
+    },
+    a2: {
+        name: 'a2'
+    },
+    a3: {
+        name: 'a3',
+        b1: {
+            name: 'b1',
+            c1: {
+                name: 'c1',
+                d1: {
+                    name: 'd1'
+                },
+                d2: {
+                    name: 'd2'
+                },
+                d3: {
+                    name: 'd3'
+                }
+            },
+            c2: {
+                name: 'c2'
+            }
+        }
+    }
+}
+```
 
-if you were provided the int string '123' and you were to find the expressions that equal a target value of 7 using those integers, you'd expect your results to look like so.
+and your output should look something like this
 
-allPossibleExpressions('123', 7) => [“1+2+3”, “1*2*3”]
+```
+viewing value: top
+viewing value: a1
+viewing value: b1
+viewing value: b2
+viewing value: c1
+viewing value: a2
+viewing value: a3
+viewing value: b1
+viewing value: c1
+viewing value: d1
+viewing value: d2
+viewing value: d3
+viewing value: c2
+```
+
+The goal is to use recursion to repeat the name printing task on each level of each child of your complex object. So you can see how each child of each node is itself it's own object, and all our recursive function does it print the name value for a given object and then check all children for name values.
+
+### Question
+
+Can you write this same solution using while loops, if so, would you prefer a recursive solution or a looping solution for a scenario like this? 
 
 # Extra practice resources
 
