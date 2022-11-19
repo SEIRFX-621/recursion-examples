@@ -128,7 +128,7 @@ while ( n <= 9) {
 console.log(output);
 ```
 
-Our inefficient fibonacci solution using recursion is going to run with a Big O of O(n^2), which is exponential, and greatly less efficient than solving this problem with a basic looping solution. The reason our recursive solution for fibonacci O(n^2) is because for each invocation of our recursive function, it will call itself two times, and each of those invocations will then call itself sub n times as it reaches a total for each fibonacci term in the sequence, so to break this down for n=9, just the first step in our sequence we'd need to calculate, we can expect the following function tree.
+Our inefficient fibonacci solution using recursion is going to run with a Big O of O(n^2), which is quadratic, and greatly less efficient than solving this problem with a basic looping solution. The reason our recursive solution for fibonacci O(n^2) is because for each invocation of our recursive function, it will call itself two times, and each of those invocations will then call itself sub n times as it reaches a total for each fibonacci term in the sequence, so to break this down for n=9, just the first step in our sequence we'd need to calculate, we can expect the following function tree.
 
 ```
 n = 8:
