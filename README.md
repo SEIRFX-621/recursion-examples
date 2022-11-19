@@ -311,7 +311,47 @@ Binary trees are a data structure that stores values in a manner that makes them
 
 See ![binary tree diagram](./binary-tree.png)
 
+# Exercise
 
+In this exercise we will challenge you to solve three problems using recursion.
+
+## [pracitce1.js](./practice1.js)
+
+Using recursion, write a function that will simply calculate the factorial value of a number provided to it as it's initial parameter. This function should only accept non-negative integers and it should output the factorial value of the initial value.
+
+In maths, the factorial of a number is the product of all smaller integers to that number. In mathimatical notation, a factorial is denoted with an '!' so the factorial of 7 would be written as such, '!7'.
+
+ex: 
+!7 = 7 * 6 * 5 * 4 * 3 * 2 * 1 = 5040
+
+### Question
+
+After you've completed you code and have verified it is working using recursion, do you believe that your solution is more efficient that if you had solved this same problem without using recursion and only using a loop?
+
+## [pracitce2.js](./practice2.js)
+
+Using recursion, write a function that wil accept an array as its only parameter and output the sum of all integers in that array.
+
+so if I have an array like this 
+
+const arr = [3,5,8,7,12]
+
+you function should return the value 35.
+
+### Question
+
+After you've completed you code and have verified it is working using recursion, do you believe that your solution is more efficient that if you had solved this same problem without using recursion and only using a loop?
+
+## [pracitce3.js](./practice3.js)
+
+Using recursion, write a function that will return true or false if a string passed to it is a palindrome or not
+
+a palindrome is a string that appears the same is shown backwards or forwards. 
+
+EX: 
+racecar
+kayak
+rotor
 
 
 
